@@ -24,8 +24,8 @@ export default function Home() {
 
   useEffect(() => {
     // When the website is opened the first time, set the first film in the list as the default one
-    setCurrentFilm(films ? films[0] : null);
-  }, [films, setCurrentFilm]);
+    if (data) setCurrentFilm(films ? films[0] : null);
+  }, [data, films, setCurrentFilm]);
 
   // fetching data
   useEffect(() => {
