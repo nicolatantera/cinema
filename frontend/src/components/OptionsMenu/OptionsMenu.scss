@@ -1,0 +1,19 @@
+@use "@/styles/vars";
+
+.options-container {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+
+  select {
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    background-color: transparent;
+    padding: 0.2rem 0.6rem;
+    display: flex;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
